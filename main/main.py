@@ -90,5 +90,8 @@ ordered = order(vocabulary) # Then call the function to sort the words in Blooga
 print("There are " + str(prepositions) + " prepositions in Text B")
 print("There are " + str(verbs) + " verbs in Text B")
 print("There are " + str(verbSubjunctive) + " subjunctive verbs in Text B")
-print("In Text B, there are " + len(prettyNumbers) + " distinct(!) pretty numbers")
+print("In Text B, there are " + str(len(prettyNumbers)) + " distinct(!) pretty numbers\n")
+
+for word in ordered:
+    print(" ".join(word))
 
